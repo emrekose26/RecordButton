@@ -16,7 +16,7 @@
         }
     }
   
-#### 2.Add this dependency in your app level `build.gradle:
+#### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
        compile 'com.github.emrekose26:RecordButton:1.0.0'
@@ -25,6 +25,7 @@
 
 # Usage
 ### 1. In your layout XML file:
+```xml
     <com.emrekose.recordbutton.RecordButton
         android:id="@+id/recordBtn"
         android:layout_width="match_parent"
@@ -35,9 +36,11 @@
         app:progressColor="@color/colorPrimary"
         app:progressStroke="15"
         app:recordIcon="@drawable/ic_keyboard_voice_white_36dp" />
+```
   
 ### 2. In your class file:
 
+```java
     RecordButton recordButton = (RecordButton) findViewById(R.id.recordBtn);
 
         recordButton.setRecordListener(new OnRecordListener() {
@@ -51,6 +54,6 @@
                 Log.e(TAG, "onRecordFinish: ");
             }
         });
-  
+```
 
 # License
