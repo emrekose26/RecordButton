@@ -32,7 +32,7 @@ public class RecordButton extends View implements Animatable {
     private RectF rectF;
 
     /**
-     * ritmap for record icon
+     * Bitmap for record icon
      */
     private Bitmap bitmap;
 
