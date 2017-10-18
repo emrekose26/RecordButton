@@ -8,7 +8,7 @@
 
 
 # Download
-#### 1.Add this in your root `build.gradle at the end of repositories:
+#### 1.Add this in your root `build.gradle` at the end of repositories:
     allprojects {
         repositories {
             ...
@@ -19,7 +19,7 @@
 #### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
-       compile 'com.github.emrekose26:RecordButton:1.0.0'
+       compile 'com.github.emrekose26:RecordButton:1.0'
     }
 
 
