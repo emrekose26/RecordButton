@@ -1,9 +1,10 @@
 # Record Button
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)]()
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RecordButton-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6351)
 
 ![](https://raw.githubusercontent.com/emrekose26/RecordButton/master/art/recordbutton.gif)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RecordButton-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6351)
-Close
+
+
 
 
  This is a library which can you create a record button view in android
