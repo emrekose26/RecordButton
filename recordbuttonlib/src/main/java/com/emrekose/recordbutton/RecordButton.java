@@ -159,7 +159,9 @@ public class RecordButton extends View implements Animatable {
         canvas.drawCircle(cx, cy, buttonRadius, buttonPaint);
         canvas.drawCircle(cx, cy, buttonRadius + buttonGap, progressEmptyPaint);
 
-        canvas.drawBitmap(bitmap, cx - bitmap.getHeight() / 2, cy - bitmap.getWidth() / 2, null);
+        if (recordIcon != -1) {
+            canvas.drawBitmap(bitmap, cx - bitmap.getHeight() / 2, cy - bitmap.getWidth() / 2, null);
+        }
 
         sweepAngle = 360 * currentMiliSecond / maxMilisecond;
         rectF.set(cx - buttonRadius - buttonGap, cy - buttonRadius - buttonGap, cx + buttonRadius + buttonGap, cy + buttonRadius + buttonGap);
