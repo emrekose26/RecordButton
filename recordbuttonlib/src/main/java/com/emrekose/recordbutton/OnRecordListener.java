@@ -7,5 +7,7 @@ package com.emrekose.recordbutton;
 public interface OnRecordListener {
     void onRecord();
 
+    void onRecordCancel();
+
     void onRecordFinish();
 }

@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
+            public void onRecordCancel() {
+                Log.e(TAG, "onRecordCancel: ");
+            }
+
+            @Override
             public void onRecordFinish() {
                 Log.e(TAG, "onRecordFinish: ");
             }

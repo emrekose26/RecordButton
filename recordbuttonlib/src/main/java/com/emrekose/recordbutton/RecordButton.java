@@ -264,6 +264,7 @@ public class RecordButton extends View implements Animatable {
                 } else {
                     animation.cancel();
                     isRecording = false;
+                    if (recordListener != null) recordListener.onRecordCancel();
                 }
 
                 if (value == maxMilisecond) {

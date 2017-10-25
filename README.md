@@ -22,7 +22,7 @@
 #### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
-       compile 'com.github.emrekose26:RecordButton:1.1'
+       compile 'com.github.emrekose26:RecordButton:1.2'
     }
 
 
@@ -51,7 +51,12 @@ RecordButton recordButton = (RecordButton) findViewById(R.id.recordBtn);
             public void onRecord() {
                 Log.e(TAG, "onRecord: ");
             }
-
+            
+            @Override
+            public void onRecordCancel() {
+                Log.e(TAG, "onRecordCancel: ");
+            }
+            
             @Override
             public void onRecordFinish() {
                 Log.e(TAG, "onRecordFinish: ");
