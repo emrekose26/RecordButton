@@ -39,7 +39,7 @@ public class RecordButton extends View implements Animatable {
     /**
      * record button radius
      */
-    private int buttonRadius;
+    private float buttonRadius;
 
     /**
      * progress ring stroke
@@ -49,7 +49,7 @@ public class RecordButton extends View implements Animatable {
     /**
      * spacing for button and progress ring
      */
-    private int buttonGap;
+    private float buttonGap;
 
     /**
      * record button fill color
@@ -119,9 +119,9 @@ public class RecordButton extends View implements Animatable {
      */
     private void init(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RecordButton);
-        buttonRadius = a.getInt(R.styleable.RecordButton_buttonRadius, 80);
+        buttonRadius = a.getDimension(R.styleable.RecordButton_buttonRadius, getResources().getDisplayMetrics().scaledDensity * 40f);
         progressStroke = a.getInt(R.styleable.RecordButton_progressStroke, 10);
-        buttonGap = a.getInt(R.styleable.RecordButton_buttonGap, 20);
+        buttonGap = a.getDimension(R.styleable.RecordButton_buttonGap, getResources().getDisplayMetrics().scaledDensity * 8f);
         buttonColor = a.getColor(R.styleable.RecordButton_buttonColor, Color.RED);
         progressEmptyColor = a.getColor(R.styleable.RecordButton_progressEmptyColor, Color.LTGRAY);
         progressColor = a.getColor(R.styleable.RecordButton_progressColor, Color.BLUE);
@@ -170,7 +170,7 @@ public class RecordButton extends View implements Animatable {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int size = buttonRadius * 2 + buttonGap * 2 + progressStroke + 30;
+        int size = ((int) buttonRadius * 2 + (int) buttonGap * 2 + progressStroke + 30);
 
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
@@ -321,7 +321,7 @@ public class RecordButton extends View implements Animatable {
         this.bitmap = bitmap;
     }
 
-    public int getButtonRadius() {
+    public float getButtonRadius() {
         return buttonRadius;
     }
 
@@ -337,7 +337,7 @@ public class RecordButton extends View implements Animatable {
         this.progressStroke = progressStroke;
     }
 
-    public int getButtonGap() {
+    public float getButtonGap() {
         return buttonGap;
     }
 

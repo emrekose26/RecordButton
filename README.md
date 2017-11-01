@@ -22,7 +22,7 @@
 #### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
-       compile 'com.github.emrekose26:RecordButton:1.2'
+       compile 'com.github.emrekose26:RecordButton:1.2.1'
     }
 
 
@@ -33,8 +33,8 @@
     android:id="@+id/recordBtn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:buttonGap="20"
-    app:buttonRadius="100"
+    app:buttonGap="10dp"
+    app:buttonRadius="40dp"
     app:maxMilisecond="10000"
     app:progressColor="@color/colorPrimary"
     app:progressStroke="15"
