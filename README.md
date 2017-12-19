@@ -22,7 +22,7 @@
 #### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
-       compile 'com.github.emrekose26:RecordButton:1.2.1'
+       compile 'com.github.emrekose26:RecordButton:1.2.4'
     }
 
 
