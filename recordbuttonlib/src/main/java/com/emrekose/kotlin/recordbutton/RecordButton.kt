@@ -1,4 +1,4 @@
-package com.anadromo.kotlin_recordbutton_lib
+package com.emrekose.kotlin.recordbutton
 
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.LinearInterpolator
+import com.emrekose.recordbutton.R
 
 class RecordButton: View, Animatable {
 
@@ -164,7 +165,7 @@ class RecordButton: View, Animatable {
     private fun progressAnimate(): ObjectAnimator {
         val animator: ObjectAnimator = ObjectAnimator.ofFloat(this, "progress", currentMiilisecond.toFloat(), maxMilisecond.toFloat())
         animator.addUpdateListener{animation ->
-            val value = animation.animatedValue as Int
+            val value = (animation.animatedValue as Float).toInt()
 
             if(isRecording){
                 currentMiilisecond = value

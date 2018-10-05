@@ -1,4 +1,4 @@
-package com.anadromo.kotlin_recordbutton_lib
+package com.emrekose.kotlin.recordbutton
 
 interface OnRecordListener {
 

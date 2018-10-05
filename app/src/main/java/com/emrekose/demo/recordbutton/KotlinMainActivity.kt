@@ -3,8 +3,8 @@ package com.emrekose.demo.recordbutton
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import com.anadromo.kotlin_recordbutton_lib.OnRecordListener
-import com.anadromo.kotlin_recordbutton_lib.RecordButton
+import com.emrekose.kotlin.recordbutton.OnRecordListener
+import com.emrekose.kotlin.recordbutton.RecordButton
 
 class KotlinMainActivity: AppCompatActivity() {
 
@@ -20,7 +20,7 @@ class KotlinMainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin_main)
 
-        recordButton.recordListener = object : OnRecordListener{
+        recordButton.recordListener = object : OnRecordListener {
             override fun onRecord() {
                 Log.e(TAG, "onRecord: ")
             }
