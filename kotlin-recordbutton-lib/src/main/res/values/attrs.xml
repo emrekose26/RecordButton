@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecordButton">
+        <attr name="buttonRadius" format="dimension"/>
+        <attr name="progressStroke" format="integer"/>
+        <attr name="buttonGap" format="dimension"/>
+        <attr name="buttonColor" format="color|reference"/>
+        <attr name="progressEmptyColor" format="color|reference"/>
+        <attr name="progressColor" format="color|reference"/>
+        <attr name="recordIcon" format="reference"/>
+        <attr name="maxMilisecond" format="integer"/>
+    </declare-styleable>
+</resources>
