@@ -1,1 +1,1 @@
-include ':app', ':recordbuttonlib'
+include ':app', ':recordbuttonlib', ':kotlin-recordbutton-lib'

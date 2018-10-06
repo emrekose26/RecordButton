@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.emrekose.kotlin.recordbutton.RecordButton
+        android:id="@+id/kotlinRecordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:buttonGap="10dp"
+        app:buttonRadius="40dp"
+        app:maxMilisecond="10000"
+        app:progressColor="@color/colorPrimary"
+        app:progressStroke="15"
+        app:recordIcon="@drawable/ic_keyboard_voice_white_36dp" />
+</android.support.constraint.ConstraintLayout>
