@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recordButton = findViewById(R.id.recordBtn);
+        recordButton = (RecordButton) findViewById(R.id.recordBtn);
 
         recordButton.setRecordListener(new OnRecordListener() {
             @Override
