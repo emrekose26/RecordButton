@@ -9,10 +9,10 @@ import com.emrekose.kotlin.recordbutton.RecordButton
 class KotlinMainActivity: AppCompatActivity() {
 
     companion object {
-        val TAG: String = "Kotlin TAG -> "
+        const val TAG: String = "Kotlin TAG -> "
     }
 
-    val recordButton: RecordButton by lazy{
+    private val recordButton: RecordButton by lazy{
         findViewById<RecordButton>(R.id.kotlinRecordBtn)
     }
 
