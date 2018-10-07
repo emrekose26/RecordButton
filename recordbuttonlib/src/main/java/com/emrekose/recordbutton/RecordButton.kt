@@ -267,7 +267,6 @@ class RecordButton : View, Animatable {
         animator.interpolator = LinearInterpolator()
         animator.duration = maxMilliSecond.toLong()
         return animator
-
     }
 
     private fun setCurrentMilliSecond(currentMilliSecond: Int) {

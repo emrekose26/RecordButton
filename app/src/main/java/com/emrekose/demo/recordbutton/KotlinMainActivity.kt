@@ -12,13 +12,13 @@ class KotlinMainActivity: AppCompatActivity() {
         const val TAG: String = "Kotlin TAG -> "
     }
 
-    private val recordButton: RecordButton by lazy{
-        findViewById<RecordButton>(R.id.kotlinRecordBtn)
+    private val recordButton: RecordButton by lazy {
+        findViewById<RecordButton>(R.id.recordBtn)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_kotlin_main)
+        setContentView(R.layout.activity_main)
 
         recordButton.recordListener = object : OnRecordListener {
             override fun onRecord() {

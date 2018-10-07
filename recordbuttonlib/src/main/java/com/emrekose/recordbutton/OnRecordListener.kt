@@ -5,9 +5,9 @@ package com.emrekose.recordbutton
  */
 
 interface OnRecordListener {
-    fun onRecord()
+	fun onRecord()
 
-    fun onRecordCancel()
-
-    fun onRecordFinish()
+	fun onRecordCancel()
+	
+	fun onRecordFinish()
 }
